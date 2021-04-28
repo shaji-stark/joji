@@ -1,4 +1,4 @@
-# Joji (Work in progress)
+# Joji 
 Joji convert a text to corresponding emoji if emoji is available
 
 ## How it Works ?
@@ -12,17 +12,28 @@ Joji convert a text to corresponding emoji if emoji is available
 
 ## Libraries used
 - [Spacy](https://spacy.io)
-## How to configure (ippo nokeetu karyam illa)
+## How to configure 
 ```
 python setup.py install 
 ```
+
+## Install
+
+Joji is now available in pip
+
+```
+pip install joji
+```
+
 ## How to Run 
 
 ```python
-from joji.jojify import Jojify
-print(Jojify.predict("Hello"))
+>> from joji.emoji import Jojify
+>> print(Jojify.predict("dracula"))
+('🧛', 0.9999999549276969)
+>> print(Jojify.predict("ganja"))
+('🚭', 0.5574894251846991)
 
-# should print waving emoji
 ```
 
 ## How to Test 
